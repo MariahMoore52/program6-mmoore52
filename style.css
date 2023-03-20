@@ -1,0 +1,114 @@
+header,main,footer{
+    resize: both;
+    overflow: auto;
+}
+
+header{
+    background-image: url("ChicagoRiver.jpg");
+}
+nav.upper{
+    margin:10px;
+    display: inline-block;
+    border: solid black;
+    border-radius: 10px;
+    padding: 5px;
+    /*float: right;*/
+}
+div.divhead{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+div.navdiv{
+    display: inline-block;
+    /*float: right;*/
+}
+div.main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+
+/*https://www.youtube.com/watch?v=AF6vGYIyV8M&t=197s*/
+.btn{
+    padding: 10px 30px;
+    background: #D2B48C;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    
+}
+
+footer{
+    background-image: url("IMG_4086.jpg");
+
+}
+div.contact{
+    
+    display: inline-block;
+}
+img{
+    max-width: 50%;
+    height: auto;
+    border: 10px solid #D2B48C;
+    margin-left: 40px;
+    
+}
+div.buttons{
+  display: inline-block;
+}
+
+/*https://www.w3schools.com/howto/howto_js_popup.asp*/
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(20, 64, 41);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(20, 64, 41) transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
